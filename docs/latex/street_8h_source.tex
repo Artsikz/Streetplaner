@@ -1,0 +1,30 @@
+\doxysection{street.\+h}
+\hypertarget{street_8h_source}{}\label{street_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ STREET\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ STREET\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{city_8h}{city.h}}"{}}\ \ \textcolor{comment}{//\ City-\/Klasse\ wird\ für\ die\ Straßen-\/Endpunkte\ benötigt}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }Street}
+\DoxyCodeLine{00007\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00009\ \ \ \ \ \mbox{\hyperlink{class_city}{City}}*\ City\_A;\ \ \textcolor{comment}{//\ Zeiger\ auf\ die\ erste\ Stadt\ (Endpunkt\ A)\ der\ Straße}}
+\DoxyCodeLine{00010\ \ \ \ \ \mbox{\hyperlink{class_city}{City}}*\ City\_B;\ \ \textcolor{comment}{//\ Zeiger\ auf\ die\ zweite\ Stadt\ (Endpunkt\ B)\ der\ Straße}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{comment}{//\ Konstruktor:\ Straße\ zwischen\ zwei\ Städten\ erstellen}}
+\DoxyCodeLine{00014\ \ \ \ \ Street(\mbox{\hyperlink{class_city}{City}}*\ city\_a,\ \mbox{\hyperlink{class_city}{City}}*\ city\_b);}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{comment}{//\ Zugriffsfunktionen\ für\ die\ Städte\ an\ den\ Endpunkten}}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_city}{City}}*\ getCity\_A()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_city}{City}}*\ getCity\_B()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{comment}{//\ Methoden\ zum\ Zeichnen\ der\ Straße\ auf\ einer\ Grafikszene}}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ draw(QGraphicsScene\&\ scene);}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ drawRed(QGraphicsScene\&\ scene)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00023\ \};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ STREET\_H}}
+
+\end{DoxyCode}

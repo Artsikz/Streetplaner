@@ -1,0 +1,130 @@
+\doxysection{ui\+\_\+addcitydialog.\+h}
+\hypertarget{_desktop___qt__6__9__0___min_g_w__64__bit-_profile_2_streetplanner__autogen_2include_2ui__addcitydialog_8h_source}{}\label{_desktop___qt__6__9__0___min_g_w__64__bit-_profile_2_streetplanner__autogen_2include_2ui__addcitydialog_8h_source}\index{build/Desktop\_Qt\_6\_9\_0\_MinGW\_64\_bit-\/Profile/Streetplanner\_autogen/include/ui\_addcitydialog.h@{build/Desktop\_Qt\_6\_9\_0\_MinGW\_64\_bit-\/Profile/Streetplanner\_autogen/include/ui\_addcitydialog.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/********************************************************************************}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ Form\ generated\ from\ reading\ UI\ file\ 'addcitydialog.ui'}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ Created\ by:\ Qt\ User\ Interface\ Compiler\ version\ 6.9.0}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**}}
+\DoxyCodeLine{00006\ \textcolor{comment}{**\ WARNING!\ All\ changes\ made\ in\ this\ file\ will\ be\ lost\ when\ recompiling\ UI\ file!}}
+\DoxyCodeLine{00007\ \textcolor{comment}{********************************************************************************/}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ UI\_ADDCITYDIALOG\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ UI\_ADDCITYDIALOG\_H}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <QtCore/QVariant>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <QtWidgets/QAbstractButton>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <QtWidgets/QApplication>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <QtWidgets/QDialog>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <QtWidgets/QDialogButtonBox>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <QtWidgets/QFormLayout>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <QtWidgets/QFrame>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <QtWidgets/QHBoxLayout>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <QtWidgets/QLabel>}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <QtWidgets/QLineEdit>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <QtWidgets/QSpacerItem>}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ui___add_city_dialog}{Ui\_AddCityDialog}}}
+\DoxyCodeLine{00027\ \{}
+\DoxyCodeLine{00028\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ QFormLayout\ *formLayout;}
+\DoxyCodeLine{00030\ \ \ \ \ QLabel\ *label\_stadtName;}
+\DoxyCodeLine{00031\ \ \ \ \ QLineEdit\ *lineEdit\_stadtName;}
+\DoxyCodeLine{00032\ \ \ \ \ QFrame\ *line;}
+\DoxyCodeLine{00033\ \ \ \ \ QLabel\ *label\_stadtKoordinaten;}
+\DoxyCodeLine{00034\ \ \ \ \ QHBoxLayout\ *horizontalLayout;}
+\DoxyCodeLine{00035\ \ \ \ \ QLineEdit\ *lineEdit\_posX;}
+\DoxyCodeLine{00036\ \ \ \ \ QLineEdit\ *lineEdit\_posY;}
+\DoxyCodeLine{00037\ \ \ \ \ QSpacerItem\ *verticalSpacer;}
+\DoxyCodeLine{00038\ \ \ \ \ QDialogButtonBox\ *buttonBox;}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ setupUi(QDialog\ *AddCityDialog)}
+\DoxyCodeLine{00041\ \ \ \ \ \{}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (AddCityDialog-\/>objectName().isEmpty())}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ AddCityDialog-\/>setObjectName(\textcolor{stringliteral}{"{}AddCityDialog"{}});}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ AddCityDialog-\/>resize(400,\ 119);}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ formLayout\ =\ \textcolor{keyword}{new}\ QFormLayout(AddCityDialog);}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ formLayout-\/>setObjectName(\textcolor{stringliteral}{"{}formLayout"{}});}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ label\_stadtName\ =\ \textcolor{keyword}{new}\ QLabel(AddCityDialog);}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ label\_stadtName-\/>setObjectName(\textcolor{stringliteral}{"{}label\_stadtName"{}});}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ formLayout-\/>setWidget(0,\ QFormLayout::ItemRole::LabelRole,\ label\_stadtName);}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ lineEdit\_stadtName\ =\ \textcolor{keyword}{new}\ QLineEdit(AddCityDialog);}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ lineEdit\_stadtName-\/>setObjectName(\textcolor{stringliteral}{"{}lineEdit\_stadtName"{}});}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ formLayout-\/>setWidget(0,\ QFormLayout::ItemRole::FieldRole,\ lineEdit\_stadtName);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ line\ =\ \textcolor{keyword}{new}\ QFrame(AddCityDialog);}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ line-\/>setObjectName(\textcolor{stringliteral}{"{}line"{}});}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ line-\/>setFrameShape(QFrame::Shape::HLine);}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ line-\/>setFrameShadow(QFrame::Shadow::Sunken);}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ formLayout-\/>setWidget(1,\ QFormLayout::ItemRole::FieldRole,\ line);}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ label\_stadtKoordinaten\ =\ \textcolor{keyword}{new}\ QLabel(AddCityDialog);}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ label\_stadtKoordinaten-\/>setObjectName(\textcolor{stringliteral}{"{}label\_stadtKoordinaten"{}});}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ formLayout-\/>setWidget(2,\ QFormLayout::ItemRole::LabelRole,\ label\_stadtKoordinaten);}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ horizontalLayout\ =\ \textcolor{keyword}{new}\ QHBoxLayout();}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ horizontalLayout-\/>setObjectName(\textcolor{stringliteral}{"{}horizontalLayout"{}});}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ lineEdit\_posX\ =\ \textcolor{keyword}{new}\ QLineEdit(AddCityDialog);}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ lineEdit\_posX-\/>setObjectName(\textcolor{stringliteral}{"{}lineEdit\_posX"{}});}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ lineEdit\_posX-\/>setMaxLength(600);}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ horizontalLayout-\/>addWidget(lineEdit\_posX);}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ lineEdit\_posY\ =\ \textcolor{keyword}{new}\ QLineEdit(AddCityDialog);}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ lineEdit\_posY-\/>setObjectName(\textcolor{stringliteral}{"{}lineEdit\_posY"{}});}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ horizontalLayout-\/>addWidget(lineEdit\_posY);}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ formLayout-\/>setLayout(2,\ QFormLayout::ItemRole::FieldRole,\ horizontalLayout);}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ verticalSpacer\ =\ \textcolor{keyword}{new}\ QSpacerItem(20,\ 40,\ QSizePolicy::Policy::Minimum,\ QSizePolicy::Policy::Expanding);}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ formLayout-\/>setItem(3,\ QFormLayout::ItemRole::FieldRole,\ verticalSpacer);}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ buttonBox\ =\ \textcolor{keyword}{new}\ QDialogButtonBox(AddCityDialog);}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ buttonBox-\/>setObjectName(\textcolor{stringliteral}{"{}buttonBox"{}});}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ buttonBox-\/>setOrientation(Qt::Orientation::Horizontal);}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ buttonBox-\/>setStandardButtons(QDialogButtonBox::StandardButton::Cancel|QDialogButtonBox::StandardButton::Ok);}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ formLayout-\/>setWidget(7,\ QFormLayout::ItemRole::SpanningRole,\ buttonBox);}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ retranslateUi(AddCityDialog);}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ QObject::connect(buttonBox,\ \&QDialogButtonBox::accepted,\ AddCityDialog,\ qOverload<>(\&QDialog::accept));}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ QObject::connect(buttonBox,\ \&QDialogButtonBox::rejected,\ AddCityDialog,\ qOverload<>(\&QDialog::reject));}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ QMetaObject::connectSlotsByName(AddCityDialog);}
+\DoxyCodeLine{00102\ \ \ \ \ \}\ \textcolor{comment}{//\ setupUi}}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keywordtype}{void}\ retranslateUi(QDialog\ *AddCityDialog)}
+\DoxyCodeLine{00105\ \ \ \ \ \{}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ AddCityDialog-\/>setWindowTitle(QCoreApplication::translate(\textcolor{stringliteral}{"{}AddCityDialog"{}},\ \textcolor{stringliteral}{"{}Dialog"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ label\_stadtName-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}AddCityDialog"{}},\ \textcolor{stringliteral}{"{}Stadt:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ lineEdit\_stadtName-\/>setPlaceholderText(QCoreApplication::translate(\textcolor{stringliteral}{"{}AddCityDialog"{}},\ \textcolor{stringliteral}{"{}Stadt"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ label\_stadtKoordinaten-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}AddCityDialog"{}},\ \textcolor{stringliteral}{"{}Koordinaten:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ lineEdit\_posX-\/>setInputMask(QString());}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ lineEdit\_posX-\/>setText(QString());}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ lineEdit\_posX-\/>setPlaceholderText(QCoreApplication::translate(\textcolor{stringliteral}{"{}AddCityDialog"{}},\ \textcolor{stringliteral}{"{}X\_Koordinate"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ lineEdit\_posY-\/>setPlaceholderText(QCoreApplication::translate(\textcolor{stringliteral}{"{}AddCityDialog"{}},\ \textcolor{stringliteral}{"{}Y\_Koordinate"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00114\ \ \ \ \ \}\ \textcolor{comment}{//\ retranslateUi}}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00116\ \};}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00118\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00119\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ui_1_1_add_city_dialog}{AddCityDialog}}:\ \textcolor{keyword}{public}\ Ui\_AddCityDialog\ \{\};}
+\DoxyCodeLine{00120\ \}\ \textcolor{comment}{//\ namespace\ Ui}}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00122\ QT\_END\_NAMESPACE}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00124\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ UI\_ADDCITYDIALOG\_H}}
+
+\end{DoxyCode}

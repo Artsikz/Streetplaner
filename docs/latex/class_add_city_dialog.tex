@@ -1,0 +1,120 @@
+\doxysection{Add\+City\+Dialog Class Reference}
+\hypertarget{class_add_city_dialog}{}\label{class_add_city_dialog}\index{AddCityDialog@{AddCityDialog}}
+
+
+Dialog class for creating and adding new cities to the street planner map.  
+
+
+
+
+{\ttfamily \#include $<$addcitydialog.\+h$>$}
+
+Inheritance diagram for Add\+City\+Dialog\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_add_city_dialog}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_add_city_dialog_a4a9df3a0f9cf7dcfd32874c943a6c2f1}{Add\+City\+Dialog}} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_add_city_dialog}{Add\+City\+Dialog}. \end{DoxyCompactList}\item 
+\Hypertarget{class_add_city_dialog_a3ceb8d09e4ee22412a7b87c57786c710}\label{class_add_city_dialog_a3ceb8d09e4ee22412a7b87c57786c710} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Add\+City\+Dialog} ()
+\begin{DoxyCompactList}\small\item\em Destructor -\/ cleans up UI resources. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_city}{City}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_add_city_dialog_a98628d0938503dcff54067c2323d86a8}{create\+City}} () const
+\begin{DoxyCompactList}\small\item\em Creates a new \doxylink{class_city}{City} object from dialog input. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_add_city_dialog_af7e8a0a529af1bb827ebc3dc541342c1}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Gets the city name from input field. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_add_city_dialog_a59c8bee36190b1dbb08fc65f02d9d34f}{getX}} () const
+\begin{DoxyCompactList}\small\item\em Gets the X coordinate from input field. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_add_city_dialog_af10eac93791723fd7cd860f5fe10ef45}{getY}} () const
+\begin{DoxyCompactList}\small\item\em Gets the Y coordinate from input field. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Dialog class for creating and adding new cities to the street planner map. 
+
+This dialog provides input fields for city name and coordinates (X, Y position). It validates user input and creates \doxylink{class_city}{City} objects based on the provided data. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_add_city_dialog_a4a9df3a0f9cf7dcfd32874c943a6c2f1}\index{AddCityDialog@{AddCityDialog}!AddCityDialog@{AddCityDialog}}
+\index{AddCityDialog@{AddCityDialog}!AddCityDialog@{AddCityDialog}}
+\doxysubsubsection{\texorpdfstring{AddCityDialog()}{AddCityDialog()}}
+{\footnotesize\ttfamily \label{class_add_city_dialog_a4a9df3a0f9cf7dcfd32874c943a6c2f1} 
+Add\+City\+Dialog\+::\+Add\+City\+Dialog (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor for \doxylink{class_add_city_dialog}{Add\+City\+Dialog}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Pointer to parent widget (default\+: nullptr) \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_add_city_dialog_a98628d0938503dcff54067c2323d86a8}\index{AddCityDialog@{AddCityDialog}!createCity@{createCity}}
+\index{createCity@{createCity}!AddCityDialog@{AddCityDialog}}
+\doxysubsubsection{\texorpdfstring{createCity()}{createCity()}}
+{\footnotesize\ttfamily \label{class_add_city_dialog_a98628d0938503dcff54067c2323d86a8} 
+\mbox{\hyperlink{class_city}{City}} \texorpdfstring{$\ast$}{*} Add\+City\+Dialog\+::create\+City (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Creates a new \doxylink{class_city}{City} object from dialog input. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to newly created \doxylink{class_city}{City} object with name and coordinates from input fields 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Caller is responsible for memory management of returned \doxylink{class_city}{City} object 
+\end{DoxyNote}
+\Hypertarget{class_add_city_dialog_af7e8a0a529af1bb827ebc3dc541342c1}\index{AddCityDialog@{AddCityDialog}!getName@{getName}}
+\index{getName@{getName}!AddCityDialog@{AddCityDialog}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_add_city_dialog_af7e8a0a529af1bb827ebc3dc541342c1} 
+QString Add\+City\+Dialog\+::get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the city name from input field. 
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_city}{City} name as QString 
+\end{DoxyReturn}
+\Hypertarget{class_add_city_dialog_a59c8bee36190b1dbb08fc65f02d9d34f}\index{AddCityDialog@{AddCityDialog}!getX@{getX}}
+\index{getX@{getX}!AddCityDialog@{AddCityDialog}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily \label{class_add_city_dialog_a59c8bee36190b1dbb08fc65f02d9d34f} 
+QString Add\+City\+Dialog\+::getX (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the X coordinate from input field. 
+
+\begin{DoxyReturn}{Returns}
+X coordinate as QString (unconverted) 
+\end{DoxyReturn}
+\Hypertarget{class_add_city_dialog_af10eac93791723fd7cd860f5fe10ef45}\index{AddCityDialog@{AddCityDialog}!getY@{getY}}
+\index{getY@{getY}!AddCityDialog@{AddCityDialog}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily \label{class_add_city_dialog_af10eac93791723fd7cd860f5fe10ef45} 
+QString Add\+City\+Dialog\+::getY (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the Y coordinate from input field. 
+
+\begin{DoxyReturn}{Returns}
+Y coordinate as QString (unconverted) 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{addcitydialog_8h}{addcitydialog.\+h}}\item 
+\mbox{\hyperlink{addcitydialog_8cpp}{addcitydialog.\+cpp}}\end{DoxyCompactItemize}

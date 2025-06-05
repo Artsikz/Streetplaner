@@ -1,0 +1,114 @@
+\doxysection{City Class Reference}
+\hypertarget{class_city}{}\label{class_city}\index{City@{City}}
+
+
+Represents a city with name and coordinates on a 2D map.  
+
+
+
+
+{\ttfamily \#include $<$city.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_city_a9e29f32d33f56bdf59cba425a7e08bd8}{City}} (QString name, int x, int y)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_city}{City} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_city_a3d22cac343c40bf53d6bc8d831ac4262}{draw}} (QGraphics\+Scene \&scene)
+\begin{DoxyCompactList}\small\item\em Draws the city on a graphics scene. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_city_ad73598d937870a165cb530958106ff07}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Gets the city\textquotesingle{}s name. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_city_a59d42732a761c278931d113c72c1c37c}{getposX}} () const
+\begin{DoxyCompactList}\small\item\em Gets the X-\/coordinate of the city. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_city_af8b641ecea47773d87e825e53fd0b997}{getposY}} () const
+\begin{DoxyCompactList}\small\item\em Gets the Y-\/coordinate of the city. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a city with name and coordinates on a 2D map. 
+
+The \doxylink{class_city}{City} class encapsulates all properties and behaviors of a city in the street planner application, including drawing capabilities. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_city_a9e29f32d33f56bdf59cba425a7e08bd8}\index{City@{City}!City@{City}}
+\index{City@{City}!City@{City}}
+\doxysubsubsection{\texorpdfstring{City()}{City()}}
+{\footnotesize\ttfamily \label{class_city_a9e29f32d33f56bdf59cba425a7e08bd8} 
+City\+::\+City (\begin{DoxyParamCaption}\item[{QString}]{name}{, }\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{class_city}{City} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the city \\
+\hline
+{\em x} & X-\/coordinate position \\
+\hline
+{\em y} & Y-\/coordinate position \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_city_a3d22cac343c40bf53d6bc8d831ac4262}\index{City@{City}!draw@{draw}}
+\index{draw@{draw}!City@{City}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{class_city_a3d22cac343c40bf53d6bc8d831ac4262} 
+void City\+::draw (\begin{DoxyParamCaption}\item[{QGraphics\+Scene \&}]{scene}{}\end{DoxyParamCaption})}
+
+
+
+Draws the city on a graphics scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene} & Reference to the QGraphics\+Scene where the city will be drawn\\
+\hline
+\end{DoxyParams}
+Draws the city as a red dot with a label showing its name and coordinates \texorpdfstring{$<$}{<} Radius of the city\textquotesingle{}s visual representation\Hypertarget{class_city_ad73598d937870a165cb530958106ff07}\index{City@{City}!getName@{getName}}
+\index{getName@{getName}!City@{City}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_city_ad73598d937870a165cb530958106ff07} 
+QString City\+::get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the city\textquotesingle{}s name. 
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_city}{City} name as QString 
+\end{DoxyReturn}
+\Hypertarget{class_city_a59d42732a761c278931d113c72c1c37c}\index{City@{City}!getposX@{getposX}}
+\index{getposX@{getposX}!City@{City}}
+\doxysubsubsection{\texorpdfstring{getposX()}{getposX()}}
+{\footnotesize\ttfamily \label{class_city_a59d42732a761c278931d113c72c1c37c} 
+int City\+::getposX (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the X-\/coordinate of the city. 
+
+\begin{DoxyReturn}{Returns}
+X-\/coordinate as integer 
+\end{DoxyReturn}
+\Hypertarget{class_city_af8b641ecea47773d87e825e53fd0b997}\index{City@{City}!getposY@{getposY}}
+\index{getposY@{getposY}!City@{City}}
+\doxysubsubsection{\texorpdfstring{getposY()}{getposY()}}
+{\footnotesize\ttfamily \label{class_city_af8b641ecea47773d87e825e53fd0b997} 
+int City\+::getposY (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the Y-\/coordinate of the city. 
+
+\begin{DoxyReturn}{Returns}
+Y-\/coordinate as integer 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{city_8h}{city.\+h}}\item 
+\mbox{\hyperlink{city_8cpp}{city.\+cpp}}\end{DoxyCompactItemize}

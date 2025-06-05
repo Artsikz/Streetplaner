@@ -1,0 +1,47 @@
+\doxysection{map.\+h}
+\hypertarget{map_8h_source}{}\label{map_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ MAP\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MAP\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QList>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QGraphicsScene>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{city_8h}{city.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}abstractmap.h"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_map_a0f5ad0fd4563497b4214038cbca8b582}{Map}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_abstract_map}{AbstractMap}}}
+\DoxyCodeLine{00021\ \{}
+\DoxyCodeLine{00022\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00025\ \ \ \ \ QList<City*>\ p\_cities;}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00029\ \ \ \ \ QList<Street*>\ p\_streets;}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_map_a0f5ad0fd4563497b4214038cbca8b582}{Map}}();}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{class_map_aa403fbe09394ccf39747588f5168e3b2}{\string~Map}}();}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_map_ab70669beead9e729b7c5bae351b33236}{addCity}}(\mbox{\hyperlink{class_city}{City}}*\ city)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_map_af7386ac56bf2ff2d5598ae6e08dc8193}{draw}}(QGraphicsScene\&\ scene);}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_map_aa5b2b05098fb3c9e750f95fb76b72e32}{clear}}();}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_map_ab2ead8f3c203a4e7666475d76fc25247}{addStreet}}(\mbox{\hyperlink{class_street}{Street}}*)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00089\ \ \ \ \ \mbox{\hyperlink{class_city}{City}}*\ \mbox{\hyperlink{class_map_a72a26f8b83864199fd77abae431a3e70}{findCity}}(\textcolor{keyword}{const}\ QString\ cityName)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00096\ \ \ \ \ QList<City*>\ \mbox{\hyperlink{class_map_a707e4cc8bd3eb6991118bf4ca13b709d}{getCityList}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00104\ \ \ \ \ QVector<Street*>\ \mbox{\hyperlink{class_map_a40c9b543e5217d083bd094fbf76e19b7}{getStreetList}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_city}{City}}*\ city)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00115\ \ \ \ \ \mbox{\hyperlink{class_city}{City}}*\ \mbox{\hyperlink{class_map_a8342e4a44a89b2da7f7cd7c5e817723e}{getOppositeCity}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_street}{Street}}*\ street,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_city}{City}}*\ city)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00125\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_map_a70ad7dd376aa71119c8dc05eed75fd05}{getLength}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_street}{Street}}*\ street)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00127\ \};}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00129\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MAP\_H}}
+
+\end{DoxyCode}

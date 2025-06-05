@@ -1,0 +1,98 @@
+\doxysection{Main\+Window Class Reference}
+\hypertarget{class_main_window}{}\label{class_main_window}\index{MainWindow@{MainWindow}}
+
+
+Hauptfenster-\/\+Klasse der Anwendung.  
+
+
+
+
+{\ttfamily \#include $<$mainwindow.\+h$>$}
+
+Inheritance diagram for Main\+Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_main_window}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_main_window_a996c5a2b6f77944776856f08ec30858d}{Main\+Window}} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Konstruktor der Main\+Window-\/\+Klasse. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{\texorpdfstring{$\sim$}{\string~}\+Main\+Window}} ()
+\begin{DoxyCompactList}\small\item\em Destruktor der Main\+Window-\/\+Klasse. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_aef6327f36216056f2b01a7245c7fbce5}{update\+City\+Dropdowns}} ()
+\begin{DoxyCompactList}\small\item\em Aktualisiert die Dropdown-\/\+Listen für Städte. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Hauptfenster-\/\+Klasse der Anwendung. 
+
+Diese Klasse stellt das Hauptfenster der Kartenanwendung dar und verwaltet die Benutzeroberfläche für die Karten-\/, Stadt-\/ und Straßenverwaltung. Sie erbt von QMain\+Window und bietet verschiedene Funktionen zum Testen, Zeichnen und Verwalten von Karten. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_main_window_a996c5a2b6f77944776856f08ec30858d}\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{MainWindow()}{MainWindow()}}
+{\footnotesize\ttfamily \label{class_main_window_a996c5a2b6f77944776856f08ec30858d} 
+Main\+Window\+::\+Main\+Window (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})}
+
+
+
+Konstruktor der Main\+Window-\/\+Klasse. 
+
+Konstruktor für das Hauptfenster der Anwendung.
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Zeiger auf das übergeordnete Widget (Standard\+: nullptr)\\
+\hline
+\end{DoxyParams}
+\DoxyHorRuler{0}
+
+
+\DoxyHorRuler{0}
+
+
+Initialisiert das UI, setzt die Szene für die QGraphics\+View, stellt den Hintergrund auf Weiß und setzt die anfängliche Fenstergröße. Außerdem werden die Map-\/\+Objekte initialisiert. \DoxyHorRuler{0}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Zeiger auf das übergeordnete QWidget (Standard\+: nullptr) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}\index{MainWindow@{MainWindow}!````~MainWindow@{\texorpdfstring{$\sim$}{\string~}MainWindow}}
+\index{````~MainWindow@{\texorpdfstring{$\sim$}{\string~}MainWindow}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}MainWindow()}{\string~MainWindow()}}
+{\footnotesize\ttfamily \label{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7} 
+Main\+Window\+::\texorpdfstring{$\sim$}{\string~}\+Main\+Window (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destruktor der Main\+Window-\/\+Klasse. 
+
+Gibt alle verwendeten Ressourcen frei und räumt das UI auf. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_main_window_aef6327f36216056f2b01a7245c7fbce5}\index{MainWindow@{MainWindow}!updateCityDropdowns@{updateCityDropdowns}}
+\index{updateCityDropdowns@{updateCityDropdowns}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{updateCityDropdowns()}{updateCityDropdowns()}}
+{\footnotesize\ttfamily \label{class_main_window_aef6327f36216056f2b01a7245c7fbce5} 
+void Main\+Window\+::update\+City\+Dropdowns (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Aktualisiert die Dropdown-\/\+Listen für Städte. 
+
+Aktualisiert die Dropdown-\/\+Menüs für die Start-\/ und Zielstädte.
+
+Diese Methode aktualisiert alle Dropdown-\/\+Menüs in der Benutzeroberfläche, die Städte anzeigen, um die neuesten verfügbaren Städte zu reflektieren.
+
+Diese Funktion leert zuerst die beiden Combo\+Boxen und füllt sie anschließend mit den Namen aller Städte aus der aktuellen \doxylink{class_map}{Map}. Danach werden die Standard-\/ Auswahlindizes gesetzt (erste Stadt als Start, zweite Stadt als Ziel), sofern genügend Städte vorhanden sind. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mainwindow_8h}{mainwindow.\+h}}\item 
+\mbox{\hyperlink{mainwindow_8cpp}{mainwindow.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,111 @@
+\doxysection{Add\+Street\+Dialog Class Reference}
+\hypertarget{class_add_street_dialog}{}\label{class_add_street_dialog}\index{AddStreetDialog@{AddStreetDialog}}
+
+
+Dialog class for creating and adding new streets between existing cities.  
+
+
+
+
+{\ttfamily \#include $<$addstreetdialog.\+h$>$}
+
+Inheritance diagram for Add\+Street\+Dialog\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_add_street_dialog}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_add_street_dialog_ac4e781e8437248c4118f1867f5fb914a}{Add\+Street\+Dialog}} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_add_street_dialog}{Add\+Street\+Dialog}. \end{DoxyCompactList}\item 
+\Hypertarget{class_add_street_dialog_a0dbdf07708e32130a6de60e2aa815a94}\label{class_add_street_dialog_a0dbdf07708e32130a6de60e2aa815a94} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Add\+Street\+Dialog} ()
+\begin{DoxyCompactList}\small\item\em Destructor -\/ cleans up UI resources. \end{DoxyCompactList}\item 
+QCombo\+Box \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_add_street_dialog_a70626aa18787be27444f13af9955c8f0}{get\+Start\+City\+Combo\+Box}} () const
+\begin{DoxyCompactList}\small\item\em Gets pointer to the start city Combo\+Box. \end{DoxyCompactList}\item 
+QCombo\+Box \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_add_street_dialog_adaea2a214193fc848ebda589c91c0369}{get\+End\+City\+Combo\+Box}} () const
+\begin{DoxyCompactList}\small\item\em Gets pointer to the end city Combo\+Box. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_add_street_dialog_aae81a335d07d1797f162019921f9365e}{get\+Length}} () const
+\begin{DoxyCompactList}\small\item\em Gets the displayed street length. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Dialog class for creating and adding new streets between existing cities. 
+
+This dialog provides Combo\+Boxes for selecting start and end cities from available cities on the map. It displays the calculated length of the street and allows users to create connections between cities in the street planner. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_add_street_dialog_ac4e781e8437248c4118f1867f5fb914a}\index{AddStreetDialog@{AddStreetDialog}!AddStreetDialog@{AddStreetDialog}}
+\index{AddStreetDialog@{AddStreetDialog}!AddStreetDialog@{AddStreetDialog}}
+\doxysubsubsection{\texorpdfstring{AddStreetDialog()}{AddStreetDialog()}}
+{\footnotesize\ttfamily \label{class_add_street_dialog_ac4e781e8437248c4118f1867f5fb914a} 
+Add\+Street\+Dialog\+::\+Add\+Street\+Dialog (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor for \doxylink{class_add_street_dialog}{Add\+Street\+Dialog}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Pointer to parent widget (default\+: nullptr) \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_add_street_dialog_adaea2a214193fc848ebda589c91c0369}\index{AddStreetDialog@{AddStreetDialog}!getEndCityComboBox@{getEndCityComboBox}}
+\index{getEndCityComboBox@{getEndCityComboBox}!AddStreetDialog@{AddStreetDialog}}
+\doxysubsubsection{\texorpdfstring{getEndCityComboBox()}{getEndCityComboBox()}}
+{\footnotesize\ttfamily \label{class_add_street_dialog_adaea2a214193fc848ebda589c91c0369} 
+QCombo\+Box \texorpdfstring{$\ast$}{*} Add\+Street\+Dialog\+::get\+End\+City\+Combo\+Box (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets pointer to the end city Combo\+Box. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to Combo\+Box containing available end cities 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Used by caller to populate and read city selection 
+\end{DoxyNote}
+\Hypertarget{class_add_street_dialog_aae81a335d07d1797f162019921f9365e}\index{AddStreetDialog@{AddStreetDialog}!getLength@{getLength}}
+\index{getLength@{getLength}!AddStreetDialog@{AddStreetDialog}}
+\doxysubsubsection{\texorpdfstring{getLength()}{getLength()}}
+{\footnotesize\ttfamily \label{class_add_street_dialog_aae81a335d07d1797f162019921f9365e} 
+QString Add\+Street\+Dialog\+::get\+Length (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the displayed street length. 
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_street}{Street} length as QString from the length label 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Length is typically calculated and displayed by the calling code 
+\end{DoxyNote}
+\Hypertarget{class_add_street_dialog_a70626aa18787be27444f13af9955c8f0}\index{AddStreetDialog@{AddStreetDialog}!getStartCityComboBox@{getStartCityComboBox}}
+\index{getStartCityComboBox@{getStartCityComboBox}!AddStreetDialog@{AddStreetDialog}}
+\doxysubsubsection{\texorpdfstring{getStartCityComboBox()}{getStartCityComboBox()}}
+{\footnotesize\ttfamily \label{class_add_street_dialog_a70626aa18787be27444f13af9955c8f0} 
+QCombo\+Box \texorpdfstring{$\ast$}{*} Add\+Street\+Dialog\+::get\+Start\+City\+Combo\+Box (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets pointer to the start city Combo\+Box. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to Combo\+Box containing available start cities 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Used by caller to populate and read city selection 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{addstreetdialog_8h}{addstreetdialog.\+h}}\item 
+\mbox{\hyperlink{addstreetdialog_8cpp}{addstreetdialog.\+cpp}}\end{DoxyCompactItemize}
